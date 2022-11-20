@@ -5,151 +5,75 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clothing - Best Apparels Online Store</title>
+  <title>Product - </title>
   <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/product.css">
 </head>
 
 <body>
   <nav class="navbar"></nav>
-  <header class="hero-section">
-    <div class="content">
-      <img src="img/light-logo.png" class="logo" alt="logo">
-      <p class="sub-heading">best fashion collection of all time</p>
+
+  <section class="product-details">
+    <div class="image-slider">
+      <div class="product-images">
+        <img src="./img/product image 1.png" class="active" alt="">
+        <img src="./img/product image 2.png" alt="">
+        <img src="./img/product image 3.png" alt="">
+        <img src="./img/product image 4.png" alt="">
+      </div>
     </div>
-  </header>
+    <div class="details">
+      <h2 class="product-brand">calvin clein</h2>
+      <p product-short-des>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <span class="product-price">$99</span>
+      <span class="product-actual-price">$200</span>
+      <span class="product-discount">( 50% off )</span>
 
-  <!-- Cards-container -->
-  <section class="product">
-    <h2 class="product-category">best selling</h2>
-    <button class="pre-btn"><img src="img/arrow.png" alt="arrow"></button>
-    <button class="nxt-btn"><img src="img/arrow.png" alt="arrow"></button>
-    <div class="product-container">
+      <p class="product-sub-heading">select size</p>
 
-      <div class="product-card">
-        <div class="product-image">
-          <span class="discount-tag">50% off</span>
-          <img src="img/card1.png" class="product-thumb" alt="">
-          <button class="card-btn">add to wishlist</button>
-        </div>
-        <div class="product-info">
-          <h2 class="product-brand">brand</h2>
-          <p class="product-short-des">a short line about the cloth...</p>
-          <span class="price">$20</span><span class="actual-price">$40</span>
-        </div>
+      <input type="radio" name="size" value="s" checked hidden id="s-size">
+      <label for="s-size" class="size-radio-btn check">s</label>
+      <input type="radio" name="size" value="s" hidden id="m-size">
+      <label for="m-size" class="size-radio-btn">m</label>
+      <input type="radio" name="size" value="s" hidden id="l-size">
+      <label for="l-size" class="size-radio-btn">l</label>
+      <input type="radio" name="size" value="s" hidden id="xl-size">
+      <label for="xl-size" class="size-radio-btn">xl</label>
+      <input type="radio" name="size" value="s" hidden id="xxl-size">
+      <label for="xxl-size" class="size-radio-btn">xxl</label>
+
+      <div>
+        <button class="btn cart-btn">add to cart</button>
+        <button class="btn">add to wishlist</button>
       </div>
 
-      <div class="product-card">
-        <div class="product-image">
-          <span class="discount-tag">50% off</span>
-          <img src="img/card2.png" class="product-thumb" alt="">
-          <button class="card-btn">add to wishlist</button>
-        </div>
-        <div class="product-info">
-          <h2 class="product-brand">brand</h2>
-          <p class="product-short-des">a short line about the cloth...</p>
-          <span class="price">$20</span><span class="actual-price">$40</span>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <div class="product-image">
-          <span class="discount-tag">50% off</span>
-          <img src="img/card3.png" class="product-thumb" alt="">
-          <button class="card-btn">add to wishlist</button>
-        </div>
-        <div class="product-info">
-          <h2 class="product-brand">brand</h2>
-          <p class="product-short-des">a short line about the cloth...</p>
-          <span class="price">$20</span><span class="actual-price">$40</span>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <div class="product-image">
-          <span class="discount-tag">50% off</span>
-          <img src="img/card4.png" class="product-thumb" alt="">
-          <button class="card-btn">add to wishlist</button>
-        </div>
-        <div class="product-info">
-          <h2 class="product-brand">brand</h2>
-          <p class="product-short-des">a short line about the cloth...</p>
-          <span class="price">$20</span><span class="actual-price">$40</span>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <div class="product-image">
-          <span class="discount-tag">50% off</span>
-          <img src="img/card5.png" class="product-thumb" alt="">
-          <button class="card-btn">add to wishlist</button>
-        </div>
-        <div class="product-info">
-          <h2 class="product-brand">brand</h2>
-          <p class="product-short-des">a short line about the cloth...</p>
-          <span class="price">$20</span><span class="actual-price">$40</span>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <div class="product-image">
-          <span class="discount-tag">50% off</span>
-          <img src="img/card6.png" class="product-thumb" alt="">
-          <button class="card-btn">add to wishlist</button>
-        </div>
-        <div class="product-info">
-          <h2 class="product-brand">brand</h2>
-          <p class="product-short-des">a short line about the cloth...</p>
-          <span class="price">$20</span><span class="actual-price">$40</span>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <div class="product-image">
-          <span class="discount-tag">50% off</span>
-          <img src="img/card7.png" class="product-thumb" alt="">
-          <button class="card-btn">add to wishlist</button>
-        </div>
-        <div class="product-info">
-          <h2 class="product-brand">brand</h2>
-          <p class="product-short-des">a short line about the cloth...</p>
-          <span class="price">$20</span><span class="actual-price">$40</span>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <div class="product-image">
-          <span class="discount-tag">50% off</span>
-          <img src="img/card8.png" class="product-thumb" alt="">
-          <button class="card-btn">add to wishlist</button>
-        </div>
-        <div class="product-info">
-          <h2 class="product-brand">brand</h2>
-          <p class="product-short-des">a short line about the cloth...</p>
-          <span class="price">$20</span><span class="actual-price">$40</span>
-        </div>
-      </div>
 
     </div>
   </section>
 
-  <!-- Collections -->
-  <section class="collection-container">
-
-    <a href="#" class="collection">
-      <img src="img/men-collection.png" alt="">
-      <p class="collection-title">women <br> apparels</p>
-    </a>
-
-    <a href="#" class="collection">
-      <img src="img/women-collection.png" alt="">
-      <p class="collection-title">men <br> apparels</p>
-    </a>
-
-    <a href="#" class="collection">
-      <img src="img/accessories-collection.png" alt="">
-      <p class="collection-title">accessories</p>
-    </a>
-
+  <section class="detail-des">
+    <h2 class="heading">description</h2>
+    <p class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, aperiam molestiae? Nihil porro dolores
+      provident. Est cupiditate obcaecati necessitatibus eum eligendi deleniti expedita accusantium? Laboriosam atque
+      repudiandae culpa fugit eum delectus quo aliquam. Minus enim quas et alias quaerat asperiores eaque delectus velit
+      iure quasi ipsa, vitae, est voluptas porro corporis molestias fugit harum eum perferendis unde. Nisi optio, sint
+      dolorem labore beatae nobis delectus voluptas quas minus asperiores fugiat in rerum saepe aperiam ipsam placeat
+      eligendi impedit similique perferendis natus error repudiandae necessitatibus. Debitis adipisci aliquam porro
+      animi repellat minus soluta hic tempore dolorem quae. Sit necessitatibus, dolores itaque iusto eum ipsa delectus
+      voluptatum, porro pariatur recusandae possimus quasi enim. Nemo itaque, enim voluptatum corrupti voluptate
+      eligendi iste voluptas totam perspiciatis eveniet maxime temporibus molestias debitis nam. Distinctio at
+      obcaecati, qui voluptatum tempore architecto eaque laboriosam nesciunt reprehenderit facere numquam? Possimus ab
+      corporis enim impedit, laudantium, ipsam mollitia rem minus quos sed illum exercitationem fugiat voluptatem omnis
+      libero. Odio aliquam corrupti officiis amet dolorem accusamus, quae, reiciendis asperiores ad, velit cumque.
+      Soluta sapiente adipisci asperiores blanditiis, perspiciatis ea placeat. Facere sit odit ratione at sunt quis
+      sequi aut qui veritatis deserunt reiciendis nobis sed culpa modi reprehenderit voluptatem obcaecati, molestias,
+      quisquam eos, quas minus! Ex corrupti numquam, ad iste iusto sint totam sit minima dolorum consequuntur. Ab,
+      similique? Quasi omnis rem, dolorum fugit animi quos quia aspernatur sit exercitationem veniam obcaecati optio
+      odio sapiente laboriosam facilis dicta, laudantium itaque aperiam nesciunt consequatur vel beatae inventore
+      officia? Incidunt, alias dolorum culpa ducimus unde, quasi sed aliquid vitae eum quidem iusto. Quas possimus eos
+      hic molestias repellat libero accusamus minima officia aut officiis, iusto impedit ipsam, vel harum, saepe tenetur
+      corporis sint iure facilis. Autem, modi molestias est eius neque id, debitis in perferendis quam consectetur unde
+      perspiciatis reprehenderit explicabo possimus!</p>
   </section>
 
   <!-- Cards-container -->
@@ -381,10 +305,11 @@
   </section>
 
   <footer></footer>
-
   <script src="js/nav.js"></script>
-  <script src="js/home.js"></script>
   <script src="js/footer.js"></script>
+  <script src="js/home.js"></script>
+  <script src="js/product.js"></script>
+
 
 </body>
 
