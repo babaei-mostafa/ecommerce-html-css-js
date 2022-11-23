@@ -1,0 +1,23 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/babaei-mostafa/ecommerce-html-css-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/babaei-mostafa/ecommerce-html-css-js/issues"
+  },
+  "homepage": "https://github.com/babaei-mostafa/ecommerce-html-css-js#readme",
+  "dependencies": {
+    "express.js": "^1.0.0",
+    "nodemon": "^2.0.20"
+  }
+}
