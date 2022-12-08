@@ -1,4 +1,4 @@
-footer {
+/* footer {
   position: relative;
   width: 100%;
   padding: 40px 10vw;
@@ -81,4 +81,109 @@ footer {
   text-align: center;
   color: #fff;
   background: rgba(0, 0, 0, 0.2);
+} */
+
+footer {
+  position: relative;
+  width: 100%;
+  padding: 40px 10vw;
+  padding-bottom: 80px;
+  background: #383838;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-content .logo {
+  height: 160px;
+}
+
+.about {
+  text-align: right;
+  margin-left: 30px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.phone {
+  display: flex;
+  color: #fff;
+}
+
+.phone .number {
+  margin-left: 10px;
+}
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 200px;
+}
+
+.social-media a {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #fff;
+}
+
+.footer-title,
+.info {
+  color: rgba(255, 255, 255, 0.75);
+  margin: 20px 0;
+  text-transform: capitalize;
+}
+
+.footer-credit {
+  width: 100%;
+  padding: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 700px) {
+  .footer-content {
+    flex-direction: column;
+  }
+  .about {
+    text-align: left;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .social-media {
+    flex-basis: 150px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .contact {
+    flex-direction: column;
+  }
+  .social-media {
+    margin-top: 20px;
+    flex-basis: 250px;
+  }
 }
