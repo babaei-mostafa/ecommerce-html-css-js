@@ -26,6 +26,9 @@ submitBtn.addEventListener("click", () => {
   }
 });
 
+// send data function
+const sendData = 
+
 // alert function
 const showAlert = (msg) => {
   let alertBox = document.querySelector(".alert-box");

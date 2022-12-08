@@ -1,6 +1,10 @@
 @import "nav.css";
 @import "footer.css";
 
+body {
+  overflow-x: hidden;
+}
+
 .hero-section {
   width: 100%;
   height: calc(100vh - 120px);
