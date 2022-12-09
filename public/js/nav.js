@@ -25,9 +25,9 @@
 
 // createNav();
 
-const showMenu = (menu) => {
-  menu.classList.toggle("open");
-};
+document.querySelector(".hamburger-bars").addEventListener("click", () => {
+  document.querySelector(".hamburger-icon").classList.toggle("open");
+});
 
 const showSearch = () => {
   document.querySelector(".secondSearch").classList.add("show");

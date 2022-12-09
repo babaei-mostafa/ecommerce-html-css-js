@@ -520,3 +520,9 @@ body {
   opacity: 0.5;
   text-decoration: line-through;
 }
+
+@media only screen and (max-width: 700px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
