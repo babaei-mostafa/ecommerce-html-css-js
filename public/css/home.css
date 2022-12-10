@@ -219,8 +219,9 @@ body {
 .hero-section {
   width: 100%;
   height: calc(100vh - 120px);
-  background: url("../img/header.png");
+  background: url("../img/header-3.jpg");
   background-size: cover;
+  background-position: bottom;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -450,7 +451,7 @@ body {
   transition: 0.4s ease-in;
 }
 
-.product-thumb-2:hover {
+.product-image-2:hover .product-thumb-2 {
   scale: 1.1;
 }
 
