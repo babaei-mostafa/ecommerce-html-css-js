@@ -39,13 +39,12 @@ document.querySelector("nav").addEventListener("mouseleave", () => {
 
 document.getElementById("user-logo").addEventListener("click", async () => {
   const { value: email } = await Swal.fire({
-    title: "Input email address",
-    input: "email",
-    inputLabel: "Your email address",
-    inputPlaceholder: "Enter your email address",
+    title: "شماره موبایل تان را وارد کنید",
+    input: "text",
+    inputPlaceholder: "09127095028",
   });
 
   if (email) {
-    Swal.fire(`Entered email: ${email}`);
+    Swal.fire(`شماره موبایل شما: ${email}`);
   }
 });
