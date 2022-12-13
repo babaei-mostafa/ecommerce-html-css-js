@@ -1,4 +1,4 @@
-.product-details {
+/* .product-details {
   width: 100%;
   padding: 60px 10vw;
   display: flex;
@@ -134,4 +134,29 @@
 .des {
   color: #383838;
   line-height: 25px;
+} */
+
+.product-container {
+  width: 100%;
+  padding: 60px 10vw;
+  display: flex;
+  justify-content: start;
+}
+
+.row-img {
+  display: flex;
+  max-width: 600px;
+}
+
+.row-img img {
+  width: 100%;
+  height: 100px;
+}
+
+.col2 {
+  flex-basis: 50%;
+}
+
+.product-container:nth-child(2) {
+  margin-right: 20px;
 }
