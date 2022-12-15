@@ -30,12 +30,12 @@ document.querySelector(".hamburger-bars").addEventListener("click", () => {
 });
 
 const showSearch = () => {
-  document.querySelector(".secondSearch").classList.add("show");
+  document.querySelector(".search").classList.toggle("show");
 };
 
-document.querySelector("nav").addEventListener("mouseleave", () => {
-  document.querySelector(".secondSearch").classList.remove("show");
-});
+const showSecondSearch = () => {
+  document.querySelector(".secondSearch").classList.toggle("show");
+};
 
 document.getElementById("user-logo").addEventListener("click", async () => {
   const { value: email } = await Swal.fire({
