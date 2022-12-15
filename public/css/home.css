@@ -197,7 +197,7 @@ body {
   .product-container {
     grid-template-columns: 1fr;
   }
-  .collection-container {
+  .categories {
     grid-template-columns: 1fr;
   }
   .collection {
