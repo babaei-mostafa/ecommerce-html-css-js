@@ -1,196 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clothing - Best Apparels Online Store</title>
-    <link rel="stylesheet" href="css/home.css" />
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link rel="stylesheet" href="./css/font-awesome/css/font-awesome.min.css">
-  </head>
 
-  <body>
-    <nav class="navbar">
-      <div class="nav">
-        <img src="img/light-logo.png" class="brand-logo" alt="logo" />
-        <div class="nav-items">
-          <div class="search">
-        <input
-          type="text"
-          class="search-box"
-          placeholder="جستجو در بین محصولات..."
-        />
-        <button class="search-btn">جستجو</button>
-      </div>
-          <i class="fa fa-search" onclick="showSearch()"></i>
-          <i class="fa fa-user-circle-o fa-x"></i>
-          <i class="fa fa-shopping-cart fa-x"></i>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clothing - Best Apparels Online Store</title>
+  <link rel="stylesheet" href="css/home.css" />
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="./css/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav">
+      <img src="img/light-logo.png" class="brand-logo" alt="logo" />
+      <div class="nav-items">
+        <div class="search">
+          <input type="text" class="search-box" placeholder="جستجو در بین محصولات..." />
+          <button class="search-btn">جستجو</button>
         </div>
-        <!-- Hamburger Menu -->
-        <div class="hamburger-icon">
-          <div class="hamburger-bars">
-            <div class="bar bar1"></div>
-            <div class="bar bar2"></div>
-            <div class="bar bar3"></div>
-          </div>
-          
-          <ul class="mobile-menu">
-            <li><a href="/">خانه</a></li>
-            <li><a href="/about">مبلمان</a></li>
-            <li><a href="/contact">تخت خواب</a></li>
-            <li><a href="/contact">میز</a></li>
-            <li><a href="/contact">کمد</a></li>
+        <i class="fa fa-search" onclick="showSearch()"></i>
+        <i class="fa fa-user-circle-o fa-x"></i>
+        <i class="fa fa-shopping-cart fa-x"></i>
+      </div>
+      <!-- Hamburger Menu -->
+      <div class="hamburger-icon">
+        <div class="hamburger-bars">
+          <div class="bar bar1"></div>
+          <div class="bar bar2"></div>
+          <div class="bar bar3"></div>
+        </div>
+
+        <ul class="mobile-menu">
+          <li><a href="/">خانه</a></li>
+          <li><a href="/about">مبلمان</a></li>
+          <li><a href="/contact">تخت خواب</a></li>
+          <li><a href="/contact">میز</a></li>
+          <li><a href="/contact">کمد</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- menu for furniture categories -->
+    <div class="second-menu">
+      <ul class="links-container">
+        <div class="dropdown">
+          <li class="link-item"><a href="#" class="link">خانه</a></li>
+        </div>
+        <div class="dropdown">
+          <li class="link-item"><a href="#" class="link">مبلمان</a></li>
+          <ul class="dropdown-menu">
+            <li><a href="#">مبل ال</a></li>
+            <li><a href="#">مبل استیل</a></li>
+            <li><a href="#">مبل راحتی</a></li>
           </ul>
         </div>
-      </div>
-      <div class="second-menu">
-        <ul class="links-container">
-          <li class="link-item"><a href="#" class="link">خانه</a></li>
-          <li class="link-item"><a href="#" class="link">مبلمان</a></li>
+        <div class="dropdown">
           <li class="link-item"><a href="#" class="link">تخت خواب</a></li>
+          <ul class="dropdown-menu">
+            <li><a href="#">تخت دو نفره</a></li>
+            <li><a href="#">تخت تک نفره</a></li>
+            <li><a href="#">تخت کودک</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
           <li class="link-item"><a href="#" class="link">میز</a></li>
+          <ul class="dropdown-menu">
+            <li><a href="#">میز نهارخوری</a></li>
+            <li><a href="#">میز تحریر</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
           <li class="link-item"><a href="#" class="link">کمد</a></li>
-        </ul>
+        </div>
+      </ul>
       <div class="second-nav-items">
         <i class="fa fa-search" onclick="showSecondSearch()"></i>
         <i class="fa fa-user-circle-o fa-x"></i>
         <i class="fa fa-shopping-cart fa-x"></i>
       </div>
       <div class="secondSearch">
-        <input
-          type="text"
-          class="search-box"
-          placeholder="جستجو در بین محصولات..."
-        />
+        <input type="text" class="search-box" placeholder="جستجو در بین محصولات..." />
         <button class="search-btn">جستجو</button>
       </div>
-      
-    </nav>
 
-    <!-- Cards-container -->
-    <!-- product grid -->
-    <div class="product-container container">
+  </nav>
 
-      <!-- product 1 -->
-      <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">50% off</span>
-            <img src="img/fur-1.jpg" class="product-thumb" alt="" />
-            <button class="card-btn">دیدن جزییات</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-short-des">a short line about the cloth...</p>
-            <span class="price">$20</span><span class="actual-price">$40</span>
-          </div>
-        </div>
+  <!-- Cards-container -->
+  <!-- product grid -->
+  <div class="product-container container">
 
-        <!-- product-2 -->
-       <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">50% off</span>
-            <img src="img/fur-2.jpg" class="product-thumb" alt="" />
-            <button class="card-btn">دیدن جزییات</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-short-des">a short line about the cloth...</p>
-            <span class="price">$20</span><span class="actual-price">$40</span>
-          </div>
-        </div>
-
-        <!-- product-3 -->
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">50% off</span>
-            <img src="img/fur-3.jpg" class="product-thumb" alt="" />
-            <button class="card-btn">دیدن جزییات</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-short-des">a short line about the cloth...</p>
-            <span class="price">$20</span><span class="actual-price">$40</span>
-          </div>
-        </div>
-
-        <!-- product-4 -->
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">50% off</span>
-            <img src="img/fur-4.jpg" class="product-thumb" alt="" />
-            <button class="card-btn">دیدن جزییات</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-short-des">a short line about the cloth...</p>
-            <span class="price-2">$20</span><span class="actual-price">$40</span>
-          </div>
-        </div>
-
-        <!-- product-5 -->
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">50% off</span>
-            <img src="img/fur-5.jpg" class="product-thumb" alt="" />
-            <button class="card-btn">دیدن جزییات</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-short-des">a short line about the cloth...</p>
-            <span class="price">$20</span><span class="actual-price">$40</span>
-          </div>
-        </div>
-
-        <!-- product-6 -->
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">50% off</span>
-            <img src="img/fur-6.jpg" class="product-thumb" alt="" />
-            <button class="card-btn">دیدن جزییات</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-short-des">a short line about the cloth...</p>
-            <span class="price">$20</span><span class="actual-price">$40</span>
-          </div>
-        </div>
-
-        <!-- product-7 -->
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">50% off</span>
-            <img src="img/fur-7.jpg" class="product-thumb" alt="" />
-            <button class="card-btn">دیدن جزییات</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-short-des">a short line about the cloth...</p>
-            <span class="price">$20</span><span class="actual-price">$40</span>
-          </div>
-        </div>
-
-        <!-- product-8 -->
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">50% off</span>
-            <img src="img/fur-8.jpg" class="product-thumb" alt="" />
-            <button class="card-btn">دیدن جزییات</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-short-des">a short line about the cloth...</p>
-            <span class="price">$20</span><span class="actual-price">$40</span>
-          </div>
-        </div>
-
+    <!-- product 1 -->
+    <div class="product-card">
+      <div class="product-image">
+        <span class="discount-tag">50% off</span>
+        <img src="img/fur-1.jpg" class="product-thumb" alt="" />
+        <button class="card-btn">دیدن جزییات</button>
+      </div>
+      <div class="product-info">
+        <h2 class="product-brand">brand</h2>
+        <p class="product-short-des">a short line about the cloth...</p>
+        <span class="price">$20</span><span class="actual-price">$40</span>
+      </div>
     </div>
 
-    <!-- Collections -->
-    <section class="category-container container">
-      <h2><span>دسته بندی محصولات</span></h2>
-      <div class="categories">
-        <a href="#" class="collection">
+    <!-- product-2 -->
+    <div class="product-card">
+      <div class="product-image">
+        <span class="discount-tag">50% off</span>
+        <img src="img/fur-2.jpg" class="product-thumb" alt="" />
+        <button class="card-btn">دیدن جزییات</button>
+      </div>
+      <div class="product-info">
+        <h2 class="product-brand">brand</h2>
+        <p class="product-short-des">a short line about the cloth...</p>
+        <span class="price">$20</span><span class="actual-price">$40</span>
+      </div>
+    </div>
+
+    <!-- product-3 -->
+    <div class="product-card">
+      <div class="product-image">
+        <span class="discount-tag">50% off</span>
+        <img src="img/fur-3.jpg" class="product-thumb" alt="" />
+        <button class="card-btn">دیدن جزییات</button>
+      </div>
+      <div class="product-info">
+        <h2 class="product-brand">brand</h2>
+        <p class="product-short-des">a short line about the cloth...</p>
+        <span class="price">$20</span><span class="actual-price">$40</span>
+      </div>
+    </div>
+
+    <!-- product-4 -->
+    <div class="product-card">
+      <div class="product-image">
+        <span class="discount-tag">50% off</span>
+        <img src="img/fur-4.jpg" class="product-thumb" alt="" />
+        <button class="card-btn">دیدن جزییات</button>
+      </div>
+      <div class="product-info">
+        <h2 class="product-brand">brand</h2>
+        <p class="product-short-des">a short line about the cloth...</p>
+        <span class="price-2">$20</span><span class="actual-price">$40</span>
+      </div>
+    </div>
+
+    <!-- product-5 -->
+    <div class="product-card">
+      <div class="product-image">
+        <span class="discount-tag">50% off</span>
+        <img src="img/fur-5.jpg" class="product-thumb" alt="" />
+        <button class="card-btn">دیدن جزییات</button>
+      </div>
+      <div class="product-info">
+        <h2 class="product-brand">brand</h2>
+        <p class="product-short-des">a short line about the cloth...</p>
+        <span class="price">$20</span><span class="actual-price">$40</span>
+      </div>
+    </div>
+
+    <!-- product-6 -->
+    <div class="product-card">
+      <div class="product-image">
+        <span class="discount-tag">50% off</span>
+        <img src="img/fur-6.jpg" class="product-thumb" alt="" />
+        <button class="card-btn">دیدن جزییات</button>
+      </div>
+      <div class="product-info">
+        <h2 class="product-brand">brand</h2>
+        <p class="product-short-des">a short line about the cloth...</p>
+        <span class="price">$20</span><span class="actual-price">$40</span>
+      </div>
+    </div>
+
+    <!-- product-7 -->
+    <div class="product-card">
+      <div class="product-image">
+        <span class="discount-tag">50% off</span>
+        <img src="img/fur-7.jpg" class="product-thumb" alt="" />
+        <button class="card-btn">دیدن جزییات</button>
+      </div>
+      <div class="product-info">
+        <h2 class="product-brand">brand</h2>
+        <p class="product-short-des">a short line about the cloth...</p>
+        <span class="price">$20</span><span class="actual-price">$40</span>
+      </div>
+    </div>
+
+    <!-- product-8 -->
+    <div class="product-card">
+      <div class="product-image">
+        <span class="discount-tag">50% off</span>
+        <img src="img/fur-8.jpg" class="product-thumb" alt="" />
+        <button class="card-btn">دیدن جزییات</button>
+      </div>
+      <div class="product-info">
+        <h2 class="product-brand">brand</h2>
+        <p class="product-short-des">a short line about the cloth...</p>
+        <span class="price">$20</span><span class="actual-price">$40</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Collections -->
+  <section class="category-container container">
+    <h2><span>دسته بندی محصولات</span></h2>
+    <div class="categories">
+      <a href="#" class="collection">
         <img src="img/bed-cat.jpg" alt="" />
         <p class="collection-title">
           سرویس <br />
@@ -213,53 +232,55 @@
         <p class="collection-title">مبلمان</p>
         <div class="collection-overlay"></div>
       </a>
+    </div>
+
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        <div>
+          <img src="img/light-logo.png" class="logo" alt="logo" />
+        </div>
+        <div class="about">
+          <p class="footer-title">درباره ما</p>
+          <p class="info">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+            بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع
+            با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه
+            و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و
+            فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها،
+            و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل
+            دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+          </p>
+        </div>
       </div>
-      
-    </section>
 
-    <footer>
-      <div class="footer-container">
-        <div class="footer-content">
-          <div>
-            <img src="img/light-logo.png" class="logo" alt="logo" />
-          </div>
-          <div class="about">
-            <p class="footer-title">about company</p>
-            <p class="info">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam
-              ipsa ipsum rem hic velit rerum ex saepe, est in sit? Dolorem,
-              commodi, architecto illum non similique blanditiis neque
-              consectetur natus doloremque saepe exercitationem officia omnis
-              accusamus assumenda et excepturi mollitia vero quas! Similique
-              praesentium repudiandae.
-            </p>
-          </div>
+      <div class="contact">
+        <div class="phone">
+          <p>تلفن: </p>
+          <p class="number">28 950 70 0912</p>
         </div>
-
-        <div class="contact">
-          <div class="phone">
-            <p>تلفن:  </p>
-            <p class="number">0912 70 950 28</p>
-          </div>
-          <div class="social-media">
-            <a href="/">
-              <i class="fa fa-telegram"></i>
-            </a>
-            <a href="/">
-              <i class="fa fa-instagram"></i>
-            </a>
-            <a href="/">
-              <i class="fa fa-whatsapp"></i>
-            </a>
-          </div>
+        <div class="social-media">
+          <a href="/">
+            <i class="fa fa-telegram"></i>
+          </a>
+          <a href="/">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="/">
+            <i class="fa fa-whatsapp"></i>
+          </a>
         </div>
-        </div>
-        <p class="footer-credit">Clothing, Best apparels online store</p>
       </div>
-    </footer>
+    </div>
+    <p class="footer-credit">تمامی حقوق متعلق به شرکت طرحفا است.</p>
+    </div>
+  </footer>
 
-    <script src="js/nav.js"></script>
-    <script src="js/home.js"></script>
-    <script src="js/footer.js"></script>
-  </body>
+  <script src="js/nav.js"></script>
+  <script src="js/home.js"></script>
+  <script src="js/footer.js"></script>
+</body>
+
 </html>
