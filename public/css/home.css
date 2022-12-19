@@ -258,7 +258,7 @@ body {
 }
 
 .product-container-2 .card-btn:hover {
-  background: #efefef;
+  background: var(--light);
   color: var(--dark-text);
 }
 
