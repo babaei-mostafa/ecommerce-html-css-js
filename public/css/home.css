@@ -223,6 +223,77 @@ body {
   gap: 20px;
 }
 
+.product-container-2 .product-card {
+  background: var(--light-accent);
+}
+
+.product-container-2 .product-image {
+  padding: 0;
+}
+
+.product-thumb {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  transition: 0.4s ease-in;
+}
+
+.product-image:hover .product-thumb {
+  scale: 1.1;
+}
+
+.product-container-2 .discount-tag {
+  background: var(--accent);
+  color: var(--light-text);
+}
+
+.product-container-2 .card-btn {
+  background: var(--accent);
+  color: var(--light-text);
+  opacity: 0;
+}
+
+.product-container-2 .product-card:hover .card-btn {
+  opacity: 1;
+}
+
+.product-container-2 .card-btn:hover {
+  background: #efefef;
+  color: var(--dark-text);
+}
+
+.product-info {
+  width: 100%;
+  height: 100px;
+  padding: 10px 20px 0 10px;
+  text-align: center;
+}
+
+.product-brand {
+  text-transform: uppercase;
+}
+
+.product-short-des {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  opacity: 0.5;
+  text-transform: capitalize;
+  margin: 5px 0;
+}
+
+.price {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.actual-price {
+  margin-left: 20px;
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
 @media only screen and (max-width: 1000px) {
   .product-container {
     grid-template-columns: repeat(2, 1fr);
