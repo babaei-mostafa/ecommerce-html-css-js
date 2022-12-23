@@ -25,26 +25,20 @@
 
 // createNav();
 
-document.querySelector(".hamburger-bars").addEventListener("click", () => {
-  document.querySelector(".hamburger-icon").classList.toggle("open");
-});
 
-const showSearch = () => {
-  document.querySelector(".search").classList.toggle("show");
-};
+// document.getElementById("user-logo").addEventListener("click", async () => {
+//   const { value: email } = await Swal.fire({
+//     title: "شماره موبایل تان را وارد کنید",
+//     input: "text",
+//     inputPlaceholder: "09127095028",
+//   });
 
-const showSecondSearch = () => {
-  document.querySelector(".secondSearch").classList.toggle("show");
-};
+//   if (email) {
+//     Swal.fire(`شماره موبایل شما: ${email}`);
+//   }
+// });
 
-document.getElementById("user-logo").addEventListener("click", async () => {
-  const { value: email } = await Swal.fire({
-    title: "شماره موبایل تان را وارد کنید",
-    input: "text",
-    inputPlaceholder: "09127095028",
-  });
 
-  if (email) {
-    Swal.fire(`شماره موبایل شما: ${email}`);
-  }
-});
+document.querySelector(".hamburger-icon").addEventListener("click", () => {
+    document.querySelector(".menu").classList.toggle("responsive")
+  })

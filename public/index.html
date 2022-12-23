@@ -12,72 +12,72 @@
 </head>
 
 <body>
-  <nav class="navbar">
-    <div class="nav">
+  <nav class="nav">
+    <div class="top-nav">
       <div class="login">
-        <p>ثبت نام / ورود</p>
+        <a href="#">ثبت نام / ورود</a>
       </div>
-      <div class="brand-logo"><img src="img/light-logo.png" alt="logo" /></div>
-
+      <div class="brand-logo">
+        <img src="img/light-logo.png" alt="logo" />
+      </div>
       <div class="search">
         <input type="text" class="search-box" placeholder="جستجو در بین محصولات..." />
         <button class="search-btn"><i class="fa fa-search"></i></button>
       </div>
-      <!-- Hamburger Menu -->
-      <div class="hamburger-icon">
-        <div class="hamburger-bars">
-          <div class="bar bar1"></div>
-          <div class="bar bar2"></div>
-          <div class="bar bar3"></div>
-        </div>
-
-        <ul class="mobile-menu">
-          <li><a href="/">خانه</a></li>
-          <li><a href="/about">مبلمان</a></li>
-          <li><a href="/contact">تخت خواب</a></li>
-          <li><a href="/contact">میز</a></li>
-          <li><a href="/contact">کمد</a></li>
-        </ul>
-      </div>
     </div>
+    <!-- Dropdon menu -->
+    <div class="btm-nav">
+      <div class="menu">
+        <a class="hamburger-icon">&#9776;</a>
+        <div class="menu-items">
+          <a href="#home" class="active">خانه</a>
+          <div class="dropdown">
+            <button class="dropbtn">مبلمان
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">مبل ال</a>
+              <a href="#">مبل استیل</a>
+              <a href="#">مبل راحتی</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">تختخواب
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">تختخواب دو نفره</a>
+              <a href="#">تختخواب تک نفره</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">میز
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">میز نهارخوری</a>
+              <a href="#">میز تحریر</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">کمد
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">آیتم 1</a>
+              <a href="#">آیتم 2</a>
+              <a href="#">آیتم 3</a>
+            </div>
+          </div>
+        </div>
 
-    <!-- menu for furniture categories -->
-    <div class="second-menu">
-      <ul class="links-container">
-        <div class="dropdown">
-          <li class="link-item"><a href="#" class="link">خانه</a></li>
-        </div>
-        <div class="dropdown">
-          <li class="link-item"><a href="#" class="link">مبلمان</a></li>
-          <ul class="dropdown-menu">
-            <li><a href="#">مبل ال</a></li>
-            <li><a href="#">مبل استیل</a></li>
-            <li><a href="#">مبل راحتی</a></li>
-          </ul>
-        </div>
-        <div class="dropdown">
-          <li class="link-item"><a href="#" class="link">تخت خواب</a></li>
-          <ul class="dropdown-menu">
-            <li><a href="#">تخت دو نفره</a></li>
-            <li><a href="#">تخت تک نفره</a></li>
-            <li><a href="#">تخت کودک</a></li>
-          </ul>
-        </div>
-        <div class="dropdown">
-          <li class="link-item"><a href="#" class="link">میز</a></li>
-          <ul class="dropdown-menu">
-            <li><a href="#">میز نهارخوری</a></li>
-            <li><a href="#">میز تحریر</a></li>
-          </ul>
-        </div>
-        <div class="dropdown">
-          <li class="link-item"><a href="#" class="link">کمد</a></li>
-        </div>
-      </ul>
+      </div>
       <div class="icons">
         <i class="fa fa-user-circle-o fa-x"></i>
         <i class="fa fa-shopping-cart fa-x"></i>
       </div>
+
+    </div>
   </nav>
 
   <!-- Hero Section -->
@@ -92,183 +92,193 @@
 
   <!-- Cards-container -->
   <!-- product grid -->
-  <div class="product-container container">
-
-    <!-- product 1 -->
-    <div class="product-card">
-      <div class="product-image">
-        <span class="discount-tag">50% off</span>
-        <img src="img/fur-1.jpg" class="product-thumb" alt="" />
-        <button class="card-btn">دیدن جزییات</button>
+  <div class="container">
+    <div class="product-container">
+      <!-- product 1 -->
+      <div class="product-card">
+        <div class="product-image">
+          <span class="discount-tag">50% off</span>
+          <img src="img/fur-1.jpg" class="product-thumb" alt="" />
+          <button class="card-btn">دیدن جزییات</button>
+        </div>
+        <div class="product-info">
+          <p class="product-short-des">توضیح خلاصه درباره محصول</p>
+          <span class="price">$20</span><span class="actual-price">$40</span>
+          <h2 class="product-brand">برند محصول</h2>
+        </div>
       </div>
-      <div class="product-info">
-        <p class="product-short-des">توضیح خلاصه درباره محصول</p>
-        <span class="price">$20</span><span class="actual-price">$40</span>
-        <h2 class="product-brand">برند محصول</h2>
+
+      <!-- product-2 -->
+      <div class="product-card">
+        <div class="product-image">
+          <span class="discount-tag">50% off</span>
+          <img src="img/fur-2.jpg" class="product-thumb" alt="" />
+          <button class="card-btn">دیدن جزییات</button>
+        </div>
+        <div class="product-info">
+          <p class="product-short-des">توضیح خلاصه درباره محصول</p>
+          <span class="price">$20</span><span class="actual-price">$40</span>
+          <h2 class="product-brand">برند محصول</h2>
+        </div>
+      </div>
+
+      <!-- product-3 -->
+      <div class="product-card">
+        <div class="product-image">
+          <span class="discount-tag">50% off</span>
+          <img src="img/fur-3.jpg" class="product-thumb" alt="" />
+          <button class="card-btn">دیدن جزییات</button>
+        </div>
+        <div class="product-info">
+          <p class="product-short-des">توضیح خلاصه درباره محصول</p>
+          <span class="price">$20</span><span class="actual-price">$40</span>
+          <h2 class="product-brand">برند محصول</h2>
+        </div>
+      </div>
+
+      <!-- product-4 -->
+      <div class="product-card">
+        <div class="product-image">
+          <span class="discount-tag">50% off</span>
+          <img src="img/fur-4.jpg" class="product-thumb" alt="" />
+          <button class="card-btn">دیدن جزییات</button>
+        </div>
+        <div class="product-info">
+          <p class="product-short-des">توضیح خلاصه درباره محصول</p>
+          <span class="price">$20</span><span class="actual-price">$40</span>
+          <h2 class="product-brand">برند محصول</h2>
+        </div>
+      </div>
+
+      <!-- product-5 -->
+      <div class="product-card">
+        <div class="product-image">
+          <span class="discount-tag">50% off</span>
+          <img src="img/fur-5.jpg" class="product-thumb" alt="" />
+          <button class="card-btn">دیدن جزییات</button>
+        </div>
+        <div class="product-info">
+          <p class="product-short-des">توضیح خلاصه درباره محصول</p>
+          <span class="price">$20</span><span class="actual-price">$40</span>
+          <h2 class="product-brand">برند محصول</h2>
+        </div>
+      </div>
+
+      <!-- product-6 -->
+      <div class="product-card">
+        <div class="product-image">
+          <span class="discount-tag">50% off</span>
+          <img src="img/fur-6.jpg" class="product-thumb" alt="" />
+          <button class="card-btn">دیدن جزییات</button>
+        </div>
+        <div class="product-info">
+          <p class="product-short-des">توضیح خلاصه درباره محصول</p>
+          <span class="price">$20</span><span class="actual-price">$40</span>
+          <h2 class="product-brand">برند محصول</h2>
+        </div>
       </div>
     </div>
 
-    <!-- product-2 -->
-    <div class="product-card">
-      <div class="product-image">
-        <span class="discount-tag">50% off</span>
-        <img src="img/fur-2.jpg" class="product-thumb" alt="" />
-        <button class="card-btn">دیدن جزییات</button>
-      </div>
-      <div class="product-info">
-        <p class="product-short-des">توضیح خلاصه درباره محصول</p>
-        <span class="price">$20</span><span class="actual-price">$40</span>
-        <h2 class="product-brand">برند محصول</h2>
-      </div>
-    </div>
-
-    <!-- product-3 -->
-    <div class="product-card">
-      <div class="product-image">
-        <span class="discount-tag">50% off</span>
-        <img src="img/fur-3.jpg" class="product-thumb" alt="" />
-        <button class="card-btn">دیدن جزییات</button>
-      </div>
-      <div class="product-info">
-        <p class="product-short-des">توضیح خلاصه درباره محصول</p>
-        <span class="price">$20</span><span class="actual-price">$40</span>
-        <h2 class="product-brand">برند محصول</h2>
-      </div>
-    </div>
-
-    <!-- product-4 -->
-    <div class="product-card">
-      <div class="product-image">
-        <span class="discount-tag">50% off</span>
-        <img src="img/fur-4.jpg" class="product-thumb" alt="" />
-        <button class="card-btn">دیدن جزییات</button>
-      </div>
-      <div class="product-info">
-        <p class="product-short-des">توضیح خلاصه درباره محصول</p>
-        <span class="price">$20</span><span class="actual-price">$40</span>
-        <h2 class="product-brand">برند محصول</h2>
-      </div>
-    </div>
-
-    <!-- product-5 -->
-    <div class="product-card">
-      <div class="product-image">
-        <span class="discount-tag">50% off</span>
-        <img src="img/fur-5.jpg" class="product-thumb" alt="" />
-        <button class="card-btn">دیدن جزییات</button>
-      </div>
-      <div class="product-info">
-        <p class="product-short-des">توضیح خلاصه درباره محصول</p>
-        <span class="price">$20</span><span class="actual-price">$40</span>
-        <h2 class="product-brand">برند محصول</h2>
-      </div>
-    </div>
-
-    <!-- product-6 -->
-    <div class="product-card">
-      <div class="product-image">
-        <span class="discount-tag">50% off</span>
-        <img src="img/fur-6.jpg" class="product-thumb" alt="" />
-        <button class="card-btn">دیدن جزییات</button>
-      </div>
-      <div class="product-info">
-        <p class="product-short-des">توضیح خلاصه درباره محصول</p>
-        <span class="price">$20</span><span class="actual-price">$40</span>
-        <h2 class="product-brand">برند محصول</h2>
-      </div>
-    </div>
-
+    <button class="product-container-btn">مشاهده محصولات بیشتر</button>
   </div>
 
   <!-- Collections -->
-  <section class="category-container container">
+  <section class="container">
     <h2><span>دسته بندی محصولات</span></h2>
-    <div class="categories">
-      <a href="#" class="collection">
-        <img src="img/bed-cat.jpg" alt="" />
-        <p class="collection-title">
-          سرویس <br />
-          خواب
-        </p>
-        <div class="collection-overlay"></div>
-      </a>
+    <div class="category-container">
+      <div class="categories">
+        <a href="#" class="collection">
+          <img src="img/bed-cat.jpg" alt="" />
+          <p class="collection-title">
+            سرویس <br />
+            خواب
+          </p>
+          <div class="collection-overlay"></div>
+        </a>
 
-      <a href="#" class="collection">
-        <img src="img/table-cat.jpg" alt="" />
-        <p class="collection-title">
-          میز <br />
-          نهارخوری
-        </p>
-        <div class="collection-overlay"></div>
-      </a>
+        <a href="#" class="collection">
+          <img src="img/table-cat.jpg" alt="" />
+          <p class="collection-title">
+            میز <br />
+            نهارخوری
+          </p>
+          <div class="collection-overlay"></div>
+        </a>
 
-      <a href="#" class="collection">
-        <img src="./img/fur-cat.jpg" alt="" />
-        <p class="collection-title">مبلمان</p>
-        <div class="collection-overlay"></div>
-      </a>
+        <a href="#" class="collection">
+          <img src="./img/fur-cat.jpg" alt="" />
+          <p class="collection-title">مبلمان</p>
+          <div class="collection-overlay"></div>
+        </a>
+      </div>
     </div>
+
+
 
   </section>
 
   <!-- product grid -->
-  <div class="product-container-2 container">
-
-    <!-- product 1 -->
-    <div class="product-card">
-      <div class="product-image">
-        <span class="discount-tag">50% off</span>
-        <img src="img/fur-1.jpg" class="product-thumb" alt="" />
-        <button class="card-btn">دیدن جزییات</button>
+  <div class="container">
+    <div class="product-container-2">
+      <!-- product 1 -->
+      <div class="product-card">
+        <div class="product-image">
+          <span class="discount-tag">50% off</span>
+          <img src="img/fur-1.jpg" class="product-thumb" alt="" />
+          <button class="card-btn">دیدن جزییات</button>
+        </div>
+        <div class="product-info">
+          <p class="product-short-des">توضیح خلاصه درباره محصول</p>
+          <span class="price">$20</span><span class="actual-price">$40</span>
+          <h2 class="product-brand">برند محصول</h2>
+        </div>
       </div>
-      <div class="product-info">
-        <p class="product-short-des">توضیح خلاصه درباره محصول</p>
-        <span class="price">$20</span><span class="actual-price">$40</span>
-        <h2 class="product-brand">برند محصول</h2>
+
+      <!-- product-2 -->
+      <div class="product-card">
+        <div class="product-image">
+          <span class="discount-tag">50% off</span>
+          <img src="img/fur-2.jpg" class="product-thumb" alt="" />
+          <button class="card-btn">دیدن جزییات</button>
+        </div>
+        <div class="product-info">
+          <p class="product-short-des">توضیح خلاصه درباره محصول</p>
+          <span class="price">$20</span><span class="actual-price">$40</span>
+          <h2 class="product-brand">برند محصول</h2>
+        </div>
+      </div>
+
+      <!-- product-3 -->
+      <div class="product-card">
+        <div class="product-image">
+          <span class="discount-tag">50% off</span>
+          <img src="img/fur-3.jpg" class="product-thumb" alt="" />
+          <button class="card-btn">دیدن جزییات</button>
+        </div>
+        <div class="product-info">
+          <p class="product-short-des">توضیح خلاصه درباره محصول</p>
+          <span class="price">$20</span><span class="actual-price">$40</span>
+          <h2 class="product-brand">برند محصول</h2>
+        </div>
+      </div>
+
+      <!-- product-4 -->
+      <div class="product-card">
+        <div class="product-image">
+          <span class="discount-tag">50% off</span>
+          <img src="img/fur-4.jpg" class="product-thumb" alt="" />
+          <button class="card-btn">دیدن جزییات</button>
+        </div>
+        <div class="product-info">
+          <p class="product-short-des">توضیح خلاصه درباره محصول</p>
+          <span class="price">$20</span><span class="actual-price">$40</span>
+          <h2 class="product-brand">برند محصول</h2>
+        </div>
       </div>
     </div>
+    <button class="product-container-btn">مشاهده محصولات بیشتر</button>
 
-    <!-- product-2 -->
-    <div class="product-card">
-      <div class="product-image">
-        <span class="discount-tag">50% off</span>
-        <img src="img/fur-2.jpg" class="product-thumb" alt="" />
-        <button class="card-btn">دیدن جزییات</button>
-      </div>
-      <div class="product-info">
-        <p class="product-short-des">توضیح خلاصه درباره محصول</p>
-        <span class="price">$20</span><span class="actual-price">$40</span>
-        <h2 class="product-brand">برند محصول</h2>
-      </div>
-    </div>
 
-    <!-- product-3 -->
-    <div class="product-card">
-      <div class="product-image">
-        <span class="discount-tag">50% off</span>
-        <img src="img/fur-3.jpg" class="product-thumb" alt="" />
-        <button class="card-btn">دیدن جزییات</button>
-      </div>
-      <div class="product-info">
-        <p class="product-short-des">توضیح خلاصه درباره محصول</p>
-        <span class="price">$20</span><span class="actual-price">$40</span>
-        <h2 class="product-brand">برند محصول</h2>
-      </div>
-    </div>
-
-    <!-- product-4 -->
-    <div class="product-card">
-      <div class="product-image">
-        <span class="discount-tag">50% off</span>
-        <img src="img/fur-4.jpg" class="product-thumb" alt="" />
-        <button class="card-btn">دیدن جزییات</button>
-      </div>
-      <div class="product-info">
-        <p class="product-short-des">توضیح خلاصه درباره محصول</p>
-        <span class="price">$20</span><span class="actual-price">$40</span>
-        <h2 class="product-brand">برند محصول</h2>
-      </div>
-    </div>
 
 
   </div>
