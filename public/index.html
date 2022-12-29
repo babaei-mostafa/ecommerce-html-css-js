@@ -1,351 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clothing - Best Apparels Online Store</title>
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="./css/font-awesome/css/font-awesome.min.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Clothing - Best Apparels Online Store</title>
-  <link rel="stylesheet" href="css/home.css" />
-  <link rel="stylesheet" href="./css/font-awesome/css/font-awesome.min.css">
-
-</head>
-
-<body>
-
-  <nav class="nav">
-    <div class="top-nav">
-      <div class="login trigger">
-        <a href="#">ثبت نام / ورود</a>
+  <body>
+    <nav class="nav">
+      <div class="top-nav">
+        <!-- <div class="login trigger">
+          <a href="#">ثبت نام / ورود</a>
+        </div> -->
+        <div class="icons">
+          <i class="fa fa-user-circle-o fa-x trigger"></i>
+          <!-- <i class="fa fa-shopping-cart fa-x"></i> -->
+        </div>
+        <div class="brand-logo">
+          <img src="img/light-logo.png" alt="logo" />
+        </div>
+        <div class="search">
+          <input
+            type="text"
+            class="search-box"
+            placeholder="جستجو در بین محصولات..."
+          />
+          <button class="search-btn"><i class="fa fa-search"></i></button>
+        </div>
       </div>
-      <div class="brand-logo">
-        <img src="img/light-logo.png" alt="logo" />
-      </div>
-      <div class="search">
-        <input type="text" class="search-box" placeholder="جستجو در بین محصولات..." />
-        <button class="search-btn"><i class="fa fa-search"></i></button>
-      </div>
-    </div>
-    <!-- Dropdon menu -->
-    <div class="btm-nav">
-      <div class="menu">
-        <a class="hamburger-icon">&#9776;</a>
-        <div class="menu-items">
-          <a href="#home" class="active">خانه</a>
-          <div class="dropdown">
-            <button class="dropbtn">مبلمان
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="#">مبل ال</a>
-              <a href="#">مبل استیل</a>
-              <a href="#">مبل راحتی</a>
+      <!-- Dropdon menu -->
+      <div class="btm-nav">
+        <div class="menu">
+          <a class="hamburger-icon">&#9776;</a>
+          <div class="menu-items">
+            <a href="#" class="active">خانه</a>
+            <div class="dropdown">
+              <button class="dropbtn" onclick="window.location.href='#'">
+                مبلمان
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">مبل ال</a>
+                <a href="#">مبل استیل</a>
+                <a href="#">مبل راحتی</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn" onclick="window.location.href='#'">
+                تختخواب
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">تختخواب دو نفره</a>
+                <a href="#">تختخواب تک نفره</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn" onclick="window.location.href='#'">
+                میز
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">میز نهارخوری</a>
+                <a href="#">میز تحریر</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn" onclick="window.location.href='#'">
+                کمد
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">آیتم 1</a>
+                <a href="#">آیتم 2</a>
+                <a href="#">آیتم 3</a>
+              </div>
             </div>
           </div>
-          <div class="dropdown">
-            <button class="dropbtn">تختخواب
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="#">تختخواب دو نفره</a>
-              <a href="#">تختخواب تک نفره</a>
-            </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- modal box -->
+    <div class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <form class="modal-form">
+          <label for="phone-num">لطفاً شماره موبایل خود را وارد کنید</label>
+          <input id="phone-num" type="text" autofocus />
+          <button>ورود</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+      <div class="content">
+        <img src="img/light-logo.png" class="logo" alt="logo" />
+        <p class="sub-heading">بهترین و جدیدترین مدل های مبلمان</p>
+        <div class="hero-overlay"></div>
+      </div>
+    </header>
+
+    <!-- Cards-container -->
+    <!-- product grid -->
+    <div class="container">
+      <div class="product-container">
+        <!-- product 1 -->
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img src="img/fur-1.jpg" class="product-thumb" alt="" />
+            <button class="card-btn">دیدن جزییات</button>
           </div>
-          <div class="dropdown">
-            <button class="dropbtn">میز
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="#">میز نهارخوری</a>
-              <a href="#">میز تحریر</a>
-            </div>
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn">کمد
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="#">آیتم 1</a>
-              <a href="#">آیتم 2</a>
-              <a href="#">آیتم 3</a>
-            </div>
+          <div class="product-info">
+            <p class="product-short-des">توضیح خلاصه درباره محصول</p>
+            <span class="price">$20</span><span class="actual-price">$40</span>
+            <h2 class="product-brand">برند محصول</h2>
           </div>
         </div>
 
-      </div>
-      <div class="icons">
-        <i class="fa fa-user-circle-o fa-x"></i>
-        <i class="fa fa-shopping-cart fa-x"></i>
-      </div>
-
-    </div>
-  </nav>
-
-  <!-- modal box -->
-  <div class="modal">
-    <div class="modal-content">
-      <span class="close-button">&times;</span>
-      <h1>مدال باکس</h1>
-    </div>
-  </div>
-
-
-  <!-- Hero Section -->
-  <header class="hero-section">
-    <div class="content">
-      <img src="img/light-logo.png" class="logo" alt="logo" />
-      <p class="sub-heading">بهترین و جدیدترین مدل های مبلمان</p>
-      <div class="hero-overlay"></div>
-    </div>
-  </header>
-
-
-  <!-- Cards-container -->
-  <!-- product grid -->
-  <div class="container">
-    <div class="product-container">
-      <!-- product 1 -->
-      <div class="product-card">
-        <div class="product-image">
-          <span class="discount-tag">50% off</span>
-          <img src="img/fur-1.jpg" class="product-thumb" alt="" />
-          <button class="card-btn">دیدن جزییات</button>
+        <!-- product-2 -->
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img src="img/fur-2.jpg" class="product-thumb" alt="" />
+            <button class="card-btn">دیدن جزییات</button>
+          </div>
+          <div class="product-info">
+            <p class="product-short-des">توضیح خلاصه درباره محصول</p>
+            <span class="price">$20</span><span class="actual-price">$40</span>
+            <h2 class="product-brand">برند محصول</h2>
+          </div>
         </div>
-        <div class="product-info">
-          <p class="product-short-des">توضیح خلاصه درباره محصول</p>
-          <span class="price">$20</span><span class="actual-price">$40</span>
-          <h2 class="product-brand">برند محصول</h2>
-        </div>
-      </div>
 
-      <!-- product-2 -->
-      <div class="product-card">
-        <div class="product-image">
-          <span class="discount-tag">50% off</span>
-          <img src="img/fur-2.jpg" class="product-thumb" alt="" />
-          <button class="card-btn">دیدن جزییات</button>
+        <!-- product-3 -->
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img src="img/fur-3.jpg" class="product-thumb" alt="" />
+            <button class="card-btn">دیدن جزییات</button>
+          </div>
+          <div class="product-info">
+            <p class="product-short-des">توضیح خلاصه درباره محصول</p>
+            <span class="price">$20</span><span class="actual-price">$40</span>
+            <h2 class="product-brand">برند محصول</h2>
+          </div>
         </div>
-        <div class="product-info">
-          <p class="product-short-des">توضیح خلاصه درباره محصول</p>
-          <span class="price">$20</span><span class="actual-price">$40</span>
-          <h2 class="product-brand">برند محصول</h2>
-        </div>
-      </div>
 
-      <!-- product-3 -->
-      <div class="product-card">
-        <div class="product-image">
-          <span class="discount-tag">50% off</span>
-          <img src="img/fur-3.jpg" class="product-thumb" alt="" />
-          <button class="card-btn">دیدن جزییات</button>
+        <!-- product-4 -->
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img src="img/fur-4.jpg" class="product-thumb" alt="" />
+            <button class="card-btn">دیدن جزییات</button>
+          </div>
+          <div class="product-info">
+            <p class="product-short-des">توضیح خلاصه درباره محصول</p>
+            <span class="price">$20</span><span class="actual-price">$40</span>
+            <h2 class="product-brand">برند محصول</h2>
+          </div>
         </div>
-        <div class="product-info">
-          <p class="product-short-des">توضیح خلاصه درباره محصول</p>
-          <span class="price">$20</span><span class="actual-price">$40</span>
-          <h2 class="product-brand">برند محصول</h2>
+
+        <!-- product-5 -->
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img src="img/fur-5.jpg" class="product-thumb" alt="" />
+            <button class="card-btn">دیدن جزییات</button>
+          </div>
+          <div class="product-info">
+            <p class="product-short-des">توضیح خلاصه درباره محصول</p>
+            <span class="price">$20</span><span class="actual-price">$40</span>
+            <h2 class="product-brand">برند محصول</h2>
+          </div>
+        </div>
+
+        <!-- product-6 -->
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img src="img/fur-6.jpg" class="product-thumb" alt="" />
+            <button class="card-btn">دیدن جزییات</button>
+          </div>
+          <div class="product-info">
+            <p class="product-short-des">توضیح خلاصه درباره محصول</p>
+            <span class="price">$20</span><span class="actual-price">$40</span>
+            <h2 class="product-brand">برند محصول</h2>
+          </div>
         </div>
       </div>
 
-      <!-- product-4 -->
-      <div class="product-card">
-        <div class="product-image">
-          <span class="discount-tag">50% off</span>
-          <img src="img/fur-4.jpg" class="product-thumb" alt="" />
-          <button class="card-btn">دیدن جزییات</button>
-        </div>
-        <div class="product-info">
-          <p class="product-short-des">توضیح خلاصه درباره محصول</p>
-          <span class="price">$20</span><span class="actual-price">$40</span>
-          <h2 class="product-brand">برند محصول</h2>
-        </div>
-      </div>
-
-      <!-- product-5 -->
-      <div class="product-card">
-        <div class="product-image">
-          <span class="discount-tag">50% off</span>
-          <img src="img/fur-5.jpg" class="product-thumb" alt="" />
-          <button class="card-btn">دیدن جزییات</button>
-        </div>
-        <div class="product-info">
-          <p class="product-short-des">توضیح خلاصه درباره محصول</p>
-          <span class="price">$20</span><span class="actual-price">$40</span>
-          <h2 class="product-brand">برند محصول</h2>
-        </div>
-      </div>
-
-      <!-- product-6 -->
-      <div class="product-card">
-        <div class="product-image">
-          <span class="discount-tag">50% off</span>
-          <img src="img/fur-6.jpg" class="product-thumb" alt="" />
-          <button class="card-btn">دیدن جزییات</button>
-        </div>
-        <div class="product-info">
-          <p class="product-short-des">توضیح خلاصه درباره محصول</p>
-          <span class="price">$20</span><span class="actual-price">$40</span>
-          <h2 class="product-brand">برند محصول</h2>
-        </div>
-      </div>
+      <button class="product-container-btn">مشاهده محصولات بیشتر</button>
     </div>
 
-    <button class="product-container-btn">مشاهده محصولات بیشتر</button>
-  </div>
-
-  <!-- Collections -->
-  <section class="container">
-    <h2><span>دسته بندی محصولات</span></h2>
-    <div class="category-container">
-      <div class="categories">
-        <a href="#" class="collection">
-          <img src="img/bed-cat.jpg" alt="" />
-          <p class="collection-title">
-            سرویس <br />
-            خواب
-          </p>
-          <div class="collection-overlay"></div>
-        </a>
-
-        <a href="#" class="collection">
-          <img src="img/table-cat.jpg" alt="" />
-          <p class="collection-title">
-            میز <br />
-            نهارخوری
-          </p>
-          <div class="collection-overlay"></div>
-        </a>
-
-        <a href="#" class="collection">
-          <img src="./img/fur-cat.jpg" alt="" />
-          <p class="collection-title">مبلمان</p>
-          <div class="collection-overlay"></div>
-        </a>
-      </div>
-    </div>
-
-
-
-  </section>
-
-  <!-- product grid -->
-  <div class="container">
-    <div class="product-container-2">
-      <!-- product 1 -->
-      <div class="product-card">
-        <div class="product-image">
-          <span class="discount-tag">50% off</span>
-          <img src="img/fur-1.jpg" class="product-thumb" alt="" />
-          <button class="card-btn">دیدن جزییات</button>
-        </div>
-        <div class="product-info">
-          <p class="product-short-des">توضیح خلاصه درباره محصول</p>
-          <span class="price">$20</span><span class="actual-price">$40</span>
-          <h2 class="product-brand">برند محصول</h2>
-        </div>
-      </div>
-
-      <!-- product-2 -->
-      <div class="product-card">
-        <div class="product-image">
-          <span class="discount-tag">50% off</span>
-          <img src="img/fur-2.jpg" class="product-thumb" alt="" />
-          <button class="card-btn">دیدن جزییات</button>
-        </div>
-        <div class="product-info">
-          <p class="product-short-des">توضیح خلاصه درباره محصول</p>
-          <span class="price">$20</span><span class="actual-price">$40</span>
-          <h2 class="product-brand">برند محصول</h2>
-        </div>
-      </div>
-
-      <!-- product-3 -->
-      <div class="product-card">
-        <div class="product-image">
-          <span class="discount-tag">50% off</span>
-          <img src="img/fur-3.jpg" class="product-thumb" alt="" />
-          <button class="card-btn">دیدن جزییات</button>
-        </div>
-        <div class="product-info">
-          <p class="product-short-des">توضیح خلاصه درباره محصول</p>
-          <span class="price">$20</span><span class="actual-price">$40</span>
-          <h2 class="product-brand">برند محصول</h2>
-        </div>
-      </div>
-
-      <!-- product-4 -->
-      <div class="product-card">
-        <div class="product-image">
-          <span class="discount-tag">50% off</span>
-          <img src="img/fur-4.jpg" class="product-thumb" alt="" />
-          <button class="card-btn">دیدن جزییات</button>
-        </div>
-        <div class="product-info">
-          <p class="product-short-des">توضیح خلاصه درباره محصول</p>
-          <span class="price">$20</span><span class="actual-price">$40</span>
-          <h2 class="product-brand">برند محصول</h2>
-        </div>
-      </div>
-    </div>
-    <button class="product-container-btn">مشاهده محصولات بیشتر</button>
-  </div>
-
-  <input type="button" value="Button1" class="btn btn-primary" />
-  <input type="button" value="Button2" class="btn btn-warning" />
-
-  <footer>
-    <div class="footer-container">
-      <div class="footer-top">
-        <img src="img/light-logo.png" alt="logo" />
-      </div>
-      <div class="footer-mid">
-        <div class="col col-1">
-          <h3 class="footer-heading">درباره ما</h3>
-          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و
-            متون بلکهتفاده قرار گیرد.</p>
-        </div>
-
-        <div class="col col-2">
-          <h3 class="footer-heading">انواع خدمات مبل</h3>
-          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و
-            متون بلکهد استفاده قرار گیرد.</p>
-        </div>
-        <div class="col col-3">
-          <h3 class="footer-heading">دسته ها</h3>
-          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از
-            این صورت می توان امید داشت که تمام و دشواری موجود در ارائا مورد استفاده قرار گیرد.</p>
-        </div>
-        <div class="col col-4">
-          <h3 class="footer-heading">تماس با ما</h3>
-          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیکمتخصصان را
-            می طلبد، تا</p>
-        </div>
-      </div>
-      <div class="footer-btm">
-        <div class="date">
-          <p>2022</p>
-        </div>
-        <div class="copyright">
-          <p>تمامی حقوق متعلق به شرکت طرحفا می باشد.</p>
-        </div>
-        <div class="social-icons">
-          <a href="/">
-            <i class="fa fa-telegram"></i>
+    <!-- Collections -->
+    <section class="container">
+      <h2><span>دسته بندی محصولات</span></h2>
+      <div class="category-container">
+        <div class="categories">
+          <a href="#" class="collection">
+            <img src="img/bed-cat.jpg" alt="" />
+            <p class="collection-title">
+              سرویس <br />
+              خواب
+            </p>
+            <div class="collection-overlay"></div>
           </a>
-          <a href="/">
-            <i class="fa fa-instagram"></i>
+
+          <a href="#" class="collection">
+            <img src="img/table-cat.jpg" alt="" />
+            <p class="collection-title">
+              میز <br />
+              نهارخوری
+            </p>
+            <div class="collection-overlay"></div>
           </a>
-          <a href="/">
-            <i class="fa fa-whatsapp"></i>
+
+          <a href="#" class="collection">
+            <img src="./img/fur-cat.jpg" alt="" />
+            <p class="collection-title">مبلمان</p>
+            <div class="collection-overlay"></div>
           </a>
         </div>
       </div>
+    </section>
+
+    <!-- product grid -->
+    <div class="container">
+      <div class="product-container-2">
+        <!-- product 1 -->
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img src="img/fur-1.jpg" class="product-thumb" alt="" />
+            <button class="card-btn">دیدن جزییات</button>
+          </div>
+          <div class="product-info">
+            <p class="product-short-des">توضیح خلاصه درباره محصول</p>
+            <span class="price">$20</span><span class="actual-price">$40</span>
+            <h2 class="product-brand">برند محصول</h2>
+          </div>
+        </div>
+
+        <!-- product-2 -->
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img src="img/fur-2.jpg" class="product-thumb" alt="" />
+            <button class="card-btn">دیدن جزییات</button>
+          </div>
+          <div class="product-info">
+            <p class="product-short-des">توضیح خلاصه درباره محصول</p>
+            <span class="price">$20</span><span class="actual-price">$40</span>
+            <h2 class="product-brand">برند محصول</h2>
+          </div>
+        </div>
+
+        <!-- product-3 -->
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img src="img/fur-3.jpg" class="product-thumb" alt="" />
+            <button class="card-btn">دیدن جزییات</button>
+          </div>
+          <div class="product-info">
+            <p class="product-short-des">توضیح خلاصه درباره محصول</p>
+            <span class="price">$20</span><span class="actual-price">$40</span>
+            <h2 class="product-brand">برند محصول</h2>
+          </div>
+        </div>
+
+        <!-- product-4 -->
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img src="img/fur-4.jpg" class="product-thumb" alt="" />
+            <button class="card-btn">دیدن جزییات</button>
+          </div>
+          <div class="product-info">
+            <p class="product-short-des">توضیح خلاصه درباره محصول</p>
+            <span class="price">$20</span><span class="actual-price">$40</span>
+            <h2 class="product-brand">برند محصول</h2>
+          </div>
+        </div>
+      </div>
+      <button class="product-container-btn">مشاهده محصولات بیشتر</button>
     </div>
-  </footer>
 
-  <script src="js/nav.js"></script>
-  <script src="js/home.js"></script>
-  <script src="js/footer.js"></script>
+    <input type="button" value="Button1" class="btn btn-primary" />
+    <input type="button" value="Button2" class="btn btn-warning" />
 
-</body>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-top">
+          <img src="img/light-logo.png" alt="logo" />
+        </div>
+        <div class="footer-mid">
+          <div class="col col-1">
+            <h3 class="footer-heading">درباره ما</h3>
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+              استفاده از طراحان گرافیک است، چاپگرها و متون بلکهتفاده قرار گیرد.
+            </p>
+          </div>
 
+          <div class="col col-2">
+            <h3 class="footer-heading">انواع خدمات مبل</h3>
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+              استفاده از طراحان گرافیک است، چاپگرها و متون بلکهد استفاده قرار
+              گیرد.
+            </p>
+          </div>
+          <div class="col col-3">
+            <h3 class="footer-heading">دسته ها</h3>
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+              استفاده از این صورت می توان امید داشت که تمام و دشواری موجود در
+              ارائا مورد استفاده قرار گیرد.
+            </p>
+          </div>
+          <div class="col col-4">
+            <h3 class="footer-heading">تماس با ما</h3>
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+              استفاده از طراحان گرافیکمتخصصان را می طلبد، تا
+            </p>
+          </div>
+        </div>
+        <div class="footer-btm">
+          <div class="date">
+            <p>2022</p>
+          </div>
+          <div class="copyright">
+            <p>تمامی حقوق متعلق به شرکت طرحفا می باشد.</p>
+          </div>
+          <div class="social-icons">
+            <a href="/">
+              <i class="fa fa-telegram"></i>
+            </a>
+            <a href="/">
+              <i class="fa fa-instagram"></i>
+            </a>
+            <a href="/">
+              <i class="fa fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/nav.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/footer.js"></script>
+  </body>
 </html>
