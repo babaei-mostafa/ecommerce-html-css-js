@@ -147,6 +147,11 @@ button {
   border-radius: 10px;
 }
 
+.product-card a {
+  text-decoration: none;
+  color: var(--dark-text);
+}
+
 .product-image {
   position: relative;
   padding: 10px;
@@ -162,6 +167,8 @@ button {
   height: 450px;
   object-fit: cover;
   transition: 0.4s ease-in;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .product-image:hover .product-thumb {
@@ -222,7 +229,6 @@ button {
   line-height: 20px;
   overflow: hidden;
   opacity: 0.5;
-  text-transform: capitalize;
   margin: 5px 0;
 }
 
