@@ -25,7 +25,6 @@
 
 // createNav();
 
-
 // document.getElementById("user-logo").addEventListener("click", async () => {
 //   const { value: email } = await Swal.fire({
 //     title: "شماره موبایل تان را وارد کنید",
@@ -38,11 +37,10 @@
 //   }
 // });
 
-
 document.querySelector(".hamburger-icon").addEventListener("click", () => {
-    document.querySelector(".menu").classList.toggle("responsive")
-})
-  
+  document.querySelector(".menu").classList.toggle("responsive");
+});
+
 // modal part here
 const modal = document.querySelector(".modal");
 const trigger = document.querySelector(".trigger");
@@ -53,11 +51,22 @@ function toggleModal() {
 }
 
 function windowOnClick(event) {
-    if (event.target === modal) {
-        toggleModal();
-    }
+  if (event.target === modal) {
+    toggleModal();
+  }
 }
 
 trigger.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
+
+// login-logout-popup here
+const userImg = document.getElementById("user-img");
+const userInfoPopup = document.querySelector(".login-logout-popup");
+// const popupText = document.querySelector(".account-info");
+// const actionButton = document.querySelector(".logout-btn");
+console.log(userImg);
+
+userImg.addEventListener("click", () => {
+  userInfoPopup.classList.toggle("hide");
+});
